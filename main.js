@@ -97,18 +97,20 @@ var {madLibsOne1,
 
 var madLibsOneTitle = 'Quick Flight';
 
-var madLibsOne = 'It was time to fly! Chewbacca, a Wookie Warrior, was the \
-copilot for the famous ' + madLibsOne1.value + ', the Millennium Falcon. It could fly \
-a through space at warp speeds of ' + madLibsOne2.value + ' miles per minute. \
-At those ' + madLibsOne3.value + ' speeds, it is smart to wear a ' + madLibsOne4.value + ' to \
-keep you strapped into your chair. Especially in a battle, like today! Chewy and \
-Han Solo are ' + madLibsOne5.value + ' to escape a Star Destroyer that is hot on their tail. \
-The Destroyer launches a ' + madLibsOne6.value + ' blaster at them. \
-But, ' + madLibsOne7.value + ' it misses them by ' + madLibsOne8.value + ' inches. Chewbacca, pushes \
-the ' + madLibsOne9.value + ' button on the control panel that says, "' + madLibsOne10.value + '!" \
-The spacecraft suddenly ' + madLibsOne11.value + ' to the left and ' + madLibsOne12.value + ' to \
-the right before it blasts through hyperspace. Chewy and Han Solo are safe! They clap \
-their ' + madLibsOne13.value + ' and shout, "' + madLibsOne14.value + '!"';
+var madLibsOne;
+
+// var madLibsOne = 'It was time to fly! Chewbacca, a Wookie Warrior, was the \
+// copilot for the famous ' + madLibsOne1.value + ', the Millennium Falcon. It could fly \
+// a through space at warp speeds of ' + madLibsOne2.value + ' miles per minute. \
+// At those ' + madLibsOne3.value + ' speeds, it is smart to wear a ' + madLibsOne4.value + ' to \
+// keep you strapped into your chair. Especially in a battle, like today! Chewy and \
+// Han Solo are ' + madLibsOne5.value + ' to escape a Star Destroyer that is hot on their tail. \
+// The Destroyer launches a ' + madLibsOne6.value + ' blaster at them. \
+// But, ' + madLibsOne7.value + ' it misses them by ' + madLibsOne8.value + ' inches. Chewbacca, pushes \
+// the ' + madLibsOne9.value + ' button on the control panel that says, "' + madLibsOne10.value + '!" \
+// The spacecraft suddenly ' + madLibsOne11.value + ' to the left and ' + madLibsOne12.value + ' to \
+// the right before it blasts through hyperspace. Chewy and Han Solo are safe! They clap \
+// their ' + madLibsOne13.value + ' and shout, "' + madLibsOne14.value + '!"';
 
 // $('#madLibsOne1Save').on('click', function () {
 //     var getVal = $('#madLibsOne1').val();
@@ -235,7 +237,7 @@ $('.question-field .save-btn').on('click', function () {
 
     var getVal = $(newId).val(); // grab the value introduced by the user
 
-    console.log(madLibsOne1);
+    // console.log(madLibsOne1);
 
     var finalObj = eval(splitSave); //eval the Input Id to convert it into an Object Property
     return finalObj.value = getVal; // set the new value introduced by the user as the new Object Property
@@ -247,6 +249,21 @@ $('.question-field .save-btn').on('click', function () {
 
 
 $('#madLibsOne14Save').on('click', function () {
+    console.log(madLibsOneVals);
+    
+    madLibsOne = 'It was time to fly! Chewbacca, a Wookie Warrior, was the \
+copilot for the famous ' + madLibsOne1.value + ', the Millennium Falcon. It could fly \
+a through space at warp speeds of ' + madLibsOne2.value + ' miles per minute. \
+At those ' + madLibsOne3.value + ' speeds, it is smart to wear a ' + madLibsOne4.value + ' to \
+keep you strapped into your chair. Especially in a battle, like today! Chewy and \
+Han Solo are ' + madLibsOne5.value + ' to escape a Star Destroyer that is hot on their tail. \
+The Destroyer launches a ' + madLibsOne6.value + ' blaster at them. \
+But, ' + madLibsOne7.value + ' it misses them by ' + madLibsOne8.value + ' inches. Chewbacca, pushes \
+the ' + madLibsOne9.value + ' button on the control panel that says, "' + madLibsOne10.value + '!" \
+The spacecraft suddenly ' + madLibsOne11.value + ' to the left and ' + madLibsOne12.value + ' to \
+the right before it blasts through hyperspace. Chewy and Han Solo are safe! They clap \
+their ' + madLibsOne13.value + ' and shout, "' + madLibsOne14.value + '!"';
+    
     console.log(madLibsOne);
 });
 
