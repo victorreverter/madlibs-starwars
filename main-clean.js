@@ -396,22 +396,58 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
 
     // Loop for create the fields
 
-    var caca = Object.keys(madLibsObj).length;
-    console.log(caca);
+    var madObjLength = Object.keys(madLibsObj).length;
+    console.log(madObjLength);
 
     var fillHtml = '';
 
     console.log(eval(madLibsStr + 1 + '.title'));
 
-    for (let questionIndex = 1; questionIndex <= caca; questionIndex++) {
-        fillHtml += '<div class = "question-field" >';
-        fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
-        fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
-        fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
-        fillHtml += '</div>';
+    for (let questionIndex = 1; questionIndex <= madObjLength; questionIndex++) {
+        // fillHtml += '<div class = "question-field" >';
+        // fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
+        // fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
+        // fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
+        // fillHtml += '</div>';
+
+        // Fill and made only the First question Visible
+        if (questionIndex === 1) {
+            fillHtml += '<div class = "question-field" >';
+            fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
+            fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
+            fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
+            fillHtml += '</div>';
+        } else {
+            fillHtml += '<div class = "question-field" style="display:none">';
+            fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
+            fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
+            fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
+            fillHtml += '</div>';
+        }
     }
 
     $('#question-answers').html(fillHtml);
+
+    var saveBtnNum = madObjLength;
+    var i = 0;
+
+    $('.question-field .save-btn').on('click', function() {
+        console.log('clicked save.btn');
+        
+        if (i < saveBtnNum) {
+            i++;
+            console.log(i);            
+            console.log(this.id.includes(Number(i)));    // Used to test if the id Includes the value
+            
+            // Things pending for do test a grab the id and Fade In Here and SHow the Nect One
+            // Just addi +1 to the Number of the id
+            // For example madLibsOne1Save to madLibsOne2Save
+        }
+    });
+
+    // $('.question-field .save-btn').on('click', function() {
+    //     console.log(this.id.includes(Number(1)));        // Used to test if the id Includes the value
+    // });
 
     // Function for detect and grab the answer
 
@@ -434,6 +470,8 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
 
         var finalObj = eval(splitSave); //eval the Input Id to convert it into an Object Property
         return finalObj.value = getVal; // set the new value introduced by the user as the new Object Property
+
+        
 
         // var getVal = $('#madLibsOne1').val();
         // console.log(madLibsOne1);
