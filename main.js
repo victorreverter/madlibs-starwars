@@ -76,23 +76,6 @@ var {madLibsOne1,
     madLibsOne13,
     madLibsOne14} = madLibsOneVals;
 
-// // Base of the Mad Libs Script
-
-// var madLibsOneTitle = 'Quick Flight';
-
-// var madLibsOne = 'It was time to fly! Chewbacca, a Wookie Warrior, was the \
-// copilot for the famous ' + madLibsOne1.value + ', the Millennium Falcon. It could fly \
-// a through space at warp speeds of ' + madLibsOne2.value + ' miles per minute. \
-// At those ' + madLibsOne3.value + ' speeds, it is smart to wear a ' + madLibsOne4.value + ' to \
-// keep you strapped into your chair. Especially in a battle, like today! Chewy and \
-// Han Solo are ' + madLibsOne5.value + ' to escape a Star Destroyer that is hot on their tail. \
-// The Destroyer launches a ' + madLibsOne6.value + ' blaster at them. \
-// But, ' + madLibsOne7.value + ' it misses them by ' + madLibsOne8.value + ' inches. Chewbacca, pushes \
-// the ' + madLibsOne9.value + ' button on the control panel that says, "' + madLibsOne10.value + '!" \
-// The spacecraft suddenly ' + madLibsOne11.value + ' to the left and ' + madLibsOne12.value + ' to \
-// the right before it blasts through hyperspace. Chewy and Han Solo are safe! They clap \
-// their ' + madLibsOne13.value + ' and shout, "' + madLibsOne14.value + '!"';
-
 // Base of the Mad Libs Script
 
 var madLibsOneTitle = 'Quick Flight';
@@ -119,6 +102,25 @@ var madLibsOne;
 // })
 
 // Function to fill the Question Answer with all the inputs 
+
+// Loop for create the fields
+
+var caca = Object.keys(madLibsOneVals).length;
+console.log(caca);
+
+var fillHtml = '';
+
+console.log(eval('madLibsOne' + 1 + '.title'));
+
+for (let questionIndex = 1; questionIndex <= caca; questionIndex++) {
+    fillHtml += '<div class = "question-field" >';
+    fillHtml += '<div class = "inputTitle" > ' + eval('madLibsOne' + questionIndex + '.title') + '</div>';
+    fillHtml += '<input type = "text" id = "madLibsOne' + questionIndex +'" />';
+    fillHtml += '<div id = "madLibsOne' + questionIndex + 'Save" class = "save-btn" > Save </div>';
+    fillHtml += '</div>';
+}
+
+/*
 
 // Field One
 var fillHtml = '<div class = "question-field" >';
@@ -217,6 +219,8 @@ fillHtml += '<div class = "inputTitle" >' + madLibsOne14.title + '</div>';
 fillHtml += '<input type = "text" id = "madLibsOne14" />';
 fillHtml += '<div id = "madLibsOne14Save" class = "save-btn" > Save </div>';
 fillHtml += '</div>';
+
+*/
 
 $('#question-answers').html(fillHtml);
 
