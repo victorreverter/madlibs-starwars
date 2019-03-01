@@ -5,59 +5,59 @@
 var madLibsOneVals = {
     madLibsOne1: {
         title: 'Noun',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne2: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne3: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne4: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne5: {
         title: '-ing- verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne6: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne7: {
         title: 'Adverb',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne8: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne9: {
         title: 'Color',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne10: {
         title: 'Nonsense Word',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne11: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne12: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne13: {
         title: 'Body Part',
-        value: ''
+        value: '-not written-'
     },
     madLibsOne14: {
         title: 'Exclamation',
-        value: ''
+        value: '-not written-'
     }
 }
 
@@ -95,75 +95,75 @@ var madLibsOneStr = 'madLibsOne';
 var madLibsTwoVals = {
     madLibsTwo1: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo2: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo3: {
         title: 'Color',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo4: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo5: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo6: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo7: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo8: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo9: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo10: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo11: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo12: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo13: {
         title: 'Color',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo14: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo15: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo16: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo17: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsTwo18: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     }
 }
 
@@ -205,59 +205,59 @@ var madLibsTwoStr = 'madLibsTwo';
 var madLibsThreeVals = {
     madLibsThree1: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree2: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree3: {
         title: 'Noun',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree4: {
         title: 'Noun',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree5: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree6: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree7: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree8: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree9: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree10: {
         title: 'Body Part',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree11: {
         title: 'Body Part',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree12: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree13: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsThree14: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     }
 }
 
@@ -295,51 +295,51 @@ var madLibsThreeStr = 'madLibsThree';
 var madLibsFourVals = {
     madLibsFour1: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour2: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour3: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour4: {
         title: 'Number',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour5: {
         title: 'Color',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour6: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour7: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour8: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour9: {
         title: 'Object',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour10: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour11: {
         title: 'Verb',
-        value: ''
+        value: '-not written-'
     },
     madLibsFour12: {
         title: 'Adjective',
-        value: ''
+        value: '-not written-'
     }
 }
 
@@ -392,6 +392,72 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
     
     $('#madLibsTitle').html(madLibsTitle);
 
+    // Conditional to fill the Answer Pattern
+
+    if (madLibsRandomNum === 1) {
+        // console.log(madLibsObj);
+
+        madLibsNum = 'It was time to fly! Chewbacca, a Wookie Warrior, was the \
+copilot for the famous ' + eval(madLibsStr + '1.title') + ', the Millennium Falcon. It could fly \
+a through space at warp speeds of ' + eval(madLibsStr + '2.title') + ' miles per minute. \
+At those ' + eval(madLibsStr + '3.title') + ' speeds, it is smart to wear a ' + eval(madLibsStr + '4.title') + ' to \
+keep you strapped into your chair. Especially in a battle, like today! Chewy and \
+Han Solo are ' + eval(madLibsStr + '5.title') + ' to escape a Star Destroyer that is hot on their tail. \
+The Destroyer launches a ' + eval(madLibsStr + '6.title') + ' blaster at them. \
+But, ' + eval(madLibsStr + '7.title') + ' it misses them by ' + eval(madLibsStr + '8.title') + ' inches. Chewbacca, pushes \
+the ' + eval(madLibsStr + '9.title') + ' button on the control panel that says, "' + eval(madLibsStr + '10.title') + '!" \
+The spacecraft suddenly ' + eval(madLibsStr + '11.title') + ' to the left and ' + eval(madLibsStr + '12.title') + ' to \
+the right before it blasts through hyperspace. Chewy and Han Solo are safe! They clap \
+their ' + eval(madLibsStr + '13.title') + ' and shout, "' + eval(madLibsStr + '14.title') + '!"';
+
+        console.log(madLibsNum);
+    } else if (madLibsRandomNum === 2) {
+        // console.log(madLibsObj);
+
+        madLibsNum = 'It was a ' + eval(madLibsStr + '1.title') + ' day for Luke Skywalker. \
+He was learning how to be a real Jedi from his teacher, Master Yoda. Yoda is \
+only ' + eval(madLibsStr + '2.title') + ' feet tall and his skin is ' + eval(madLibsStr + '3.title') + '. \
+He is very wise and ' + eval(madLibsStr + '4.title') + '. He teaches Luke some ' + eval(madLibsStr + '5.title') + ' lessons: \
+To be a Jedi you must first be ' + eval(madLibsStr + '6.title') + '. You must also be strong. To build strength, balance \
+on your hands for ' + eval(madLibsStr + '7.title') + 'minutes and do ' + eval(madLibsStr + '8.title') + ' pushups. \
+This will make your muscles ' + eval(madLibsStr + '9.title') + '. Do not think ' + eval(madLibsStr + '10.title') + ' thoughts \
+and believe in yourself. A Jedi uses a ' + eval(madLibsStr + '11.title') + ' of great ' + eval(madLibsStr + '12.title') + ' called \
+a lightsaber. Luke\'s lightsaber is ' + eval(madLibsStr + '13.title') + '. He learns how to strike, block, \
+and ' + eval(madLibsStr + '14.title') + ' in a fight. He has to jump ' + eval(madLibsStr + '15.title') + ' and \
+run ' + eval(madLibsStr + '16.title') + '. Being a Jedi is not ' + eval(madLibsStr + '17.title') + '. It takes a lot of \
+practice. But, Luke us ready! He wants to ' + eval(madLibsStr + '18.title') + ' with the Dark Side and win!';
+
+        console.log(madLibsNum);
+    } else if (madLibsRandomNum === 3) {
+        // console.log(madLibsObj);
+
+        madLibsNum = 'There is no power in the universe quite like the Force. The Force is what gives a \
+Jedi his ' + eval(madLibsStr + '1.title') + 'power. It\'s an energy field created by all \
+' + eval(madLibsStr + '2.title') + eval(madLibsStr + '3.title') + '. It binds the ' + eval(madLibsStr + '4.title') + ' together. \
+The Force can be used for good or ' + eval(madLibsStr + '5.title') + '. The Dark Side is ' + eval(madLibsStr + '6.title') + 'and \
+the Side ' + eval(madLibsStr + '7.title') + ' is good! The Force ' + eval(madLibsStr + '8.title') + ' a Jedi strong. To use the Force \
+requires willpower, discipline and ' + eval(madLibsStr + '9.title') + '. A person who is strong with the Force can move objects through \
+the air with an outstretched ' + eval(madLibsStr + '10.title') + ' or, read the thoughts in another person\'s ' + eval(madLibsStr + '11.title') + '. \
+It takes a lot of energy to do this. Some people are born with a ' + eval(madLibsStr + '12.title') + 'connection with the Force. It\'s \
+a ' + eval(madLibsStr + '13.title') + 'compliment to say, "May the ' + eval(madLibsStr + '14.title') + ' be with you."';
+
+        console.log(madLibsNum);
+    } else if (madLibsRandomNum === 4) {
+        // console.log(madLibsObj);
+
+        madLibsNum = 'It\'s not easy being a princess! Especially, when you are a rebel. Princess Leia has a lot to do! \
+First, she puts on her make up, ' + eval(madLibsStr + '1.value') + ', and wraps her hair into a bun. She doesn\'t \
+wear a ' + eval(madLibsStr + '2.value') + 'dress! She has to be able to run and ' + eval(madLibsStr + '3.value') + '. Then, \
+she straps on ' + eval(madLibsStr + '4.value') + 'weapons. Her favourite one is a ' + eval(madLibsStr + '5.value') + ' blaster \
+pistol. It is like a gun, but instead of bullets, it shoots bright ' + eval(madLibsStr + '6.value') + '. In her training, she \
+doesn\'t learn to dance, paint, and ' + eval(madLibsStr + '7.value') + ' like most pricesses. Instead, she is taught how \
+to fight and ' + eval(madLibsStr + '8.value') + '. Leia is very brave. She knows how to swing a ' + eval(madLibsStr + '9.value') + ' and \
+dodge a strike. She can protect herself from ' + eval(madLibsStr + '10. value ') + ' villains. When her friends need help, she is \
+willing to ' + eval(madLibsStr + '11. value ') + 'to the rescue. She is a ' + eval(madLibsStr + '12.value') + ' princess.';
+
+        console.log(madLibsNum);
+    }
+
     // Function to fill the Question Answer with all the inputs 
 
     // Loop for create the fields
@@ -432,21 +498,21 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
     var i = 0;
 
     $('.question-field .save-btn').on('click', function() {
-        console.log('clicked save.btn');
-        console.log(this.id);        
+        // console.log('clicked save.btn');
+        // console.log(this.id);        
         
         if (i < saveBtnNum) {
             i++;
-            console.log(i);            
-            console.log(this.id.includes(Number(i)));    // Used to test if the id Includes the value
+            // console.log(i);            
+            // console.log(this.id.includes(Number(i)));    // Used to test if the id Includes the value
             
             // Things pending for do test a grab the id and Fade In Here and SHow the Nect One
             // Just addi +1 to the Number of the id
             // For example madLibsOne1Save to madLibsOne2Save
             var currentQuestionBox = '#questionBox' + i;
             var nextQuestionBox = '#questionBox' + (i + 1);
-            console.log(currentQuestionBox);
-            console.log(nextQuestionBox);
+            // console.log(currentQuestionBox);
+            // console.log(nextQuestionBox);
 
             if (i !== saveBtnNum){
                 $(currentQuestionBox).fadeOut(500, function () {
@@ -481,15 +547,24 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
         // console.log(madLibsOne1);
 
         var finalObj = eval(splitSave); //eval the Input Id to convert it into an Object Property
-        return finalObj.value = getVal; // set the new value introduced by the user as the new Object Property
 
-        
+        console.log(getVal);
+
+        if(getVal == '') {
+            return finalObj.value = '-not written-'; // return -not written- if the imput is empty and not filled by the user
+        } else {
+            return finalObj.value = getVal; // set the new value introduced by the user as the new Object Property
+        }
+
+        // Old return version
+        // return finalObj.value = getVal; // set the new value introduced by the user as the new Object Property
 
         // var getVal = $('#madLibsOne1').val();
         // console.log(madLibsOne1);
         // return madLibsOne1.value = getVal;
     })
 
+    // Print the Final Result with the Values Introduced in the Inputs
     if (madLibsRandomNum === 1) {
         $('#madLibsOne14Save').on('click', function () {
             console.log(madLibsObj);
