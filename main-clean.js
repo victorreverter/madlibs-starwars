@@ -371,7 +371,7 @@ var madLibsFourStr = 'madLibsFour';
 // Execution Alternatively the MadLibs Filler
 
 var randomMadLibs = Math.floor(Math.random() * 4) + 1;
-console.log(randomMadLibs);
+// console.log(randomMadLibs);
 
 // madLibsExec(madLibsOne, madLibsOneStr, madLibsOneVals, madLibsOneTitle, 1);
 // madLibsExec(madLibsTwo, madLibsTwoStr, madLibsTwoVals, madLibsTwoTitle, 2);
@@ -397,11 +397,11 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
     // Loop for create the fields
 
     var madObjLength = Object.keys(madLibsObj).length;
-    console.log(madObjLength);
+    // console.log(madObjLength);
 
     var fillHtml = '';
 
-    console.log(eval(madLibsStr + 1 + '.title'));
+    // console.log(eval(madLibsStr + 1 + '.title'));
 
     for (let questionIndex = 1; questionIndex <= madObjLength; questionIndex++) {
         // fillHtml += '<div class = "question-field" >';
@@ -412,13 +412,13 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
 
         // Fill and made only the First question Visible
         if (questionIndex === 1) {
-            fillHtml += '<div class = "question-field" >';
+            fillHtml += '<div id="questionBox' + questionIndex + '" class = "question-field" >';
             fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
             fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
             fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
             fillHtml += '</div>';
         } else {
-            fillHtml += '<div class = "question-field" style="display:none">';
+            fillHtml += '<div id="questionBox' + questionIndex + '" class = "question-field" style="display:none">';
             fillHtml += '<div class = "inputTitle" > ' + eval(madLibsStr + questionIndex + '.title') + '</div>';
             fillHtml += '<input type = "text" id = "' + madLibsStr + questionIndex + '" />';
             fillHtml += '<div id = "' + madLibsStr + questionIndex + 'Save" class = "save-btn" > Save </div>';
@@ -433,6 +433,7 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
 
     $('.question-field .save-btn').on('click', function() {
         console.log('clicked save.btn');
+        console.log(this.id);        
         
         if (i < saveBtnNum) {
             i++;
@@ -442,6 +443,17 @@ function madLibsExec(madLibsNum, madLibsStr, madLibsObj, madLibsTitle, madLibsRa
             // Things pending for do test a grab the id and Fade In Here and SHow the Nect One
             // Just addi +1 to the Number of the id
             // For example madLibsOne1Save to madLibsOne2Save
+            var currentQuestionBox = '#questionBox' + i;
+            var nextQuestionBox = '#questionBox' + (i + 1);
+            console.log(currentQuestionBox);
+            console.log(nextQuestionBox);
+
+            if (i !== saveBtnNum){
+                $(currentQuestionBox).fadeOut(500, function () {
+                    $(nextQuestionBox).fadeIn(500);
+                });
+            }
+            
         }
     });
 
