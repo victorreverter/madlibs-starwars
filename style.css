@@ -1,14 +1,286 @@
 @import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 body {
-  background: pink; }
+  background: #fff;
+  font-family: 'Ubuntu', sans-serif; }
 
-h1 {
-  font-size: 2em;
-  font-weight: bold; }
+.wrap {
+  display: block;
+  width: 100%;
+  min-height: 100vh; }
 
-.save-btn {
-  width: 200px;
-  background: #c01a94;
-  color: #fff;
+.home, .question-answer {
+  background: url("img/BGMOBILE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .home, .question-answer {
+      background: url("img/BGHOME.jpg");
+      background-size: cover;
+      background-repeat: no-repeat; } }
+
+@media (min-width: 768px) {
+  .question-answer {
+    background: url("img/BGDESKTOP.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
+
+.start-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #0E1A25;
+  border-radius: 10px; }
+  @media (min-width: 768px) {
+    .start-box {
+      background: #cc3742; } }
+  .start-box .home-logo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 7em 0; }
+
+#home-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  max-width: 250px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  font-weight: 900;
+  padding: 0.5em 0;
   text-align: center;
-  padding: 0.5em; }
+  color: #fff;
+  background: #cc3742;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.logo {
+  background: url("img/LOGOmadlibs.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.ui-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #0E1A25;
+  border-radius: 15px; }
+  @media (min-width: 768px) {
+    .ui-block {
+      overflow: hidden; } }
+  @media (min-width: 1024px) {
+    .ui-block {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      overflow: inherit;
+      left: calc(50% + 20px);
+      min-height: 600px; } }
+  .ui-block .pic-side {
+    display: none;
+    width: 100%;
+    padding: 6em 0; }
+    @media (min-width: 768px) {
+      .ui-block .pic-side {
+        display: block; } }
+    @media (min-width: 1024px) {
+      .ui-block .pic-side {
+        width: 40%;
+        padding: 15em 0;
+        border-radius: 20px;
+        margin-left: -40px; } }
+  .ui-block #question-pic {
+    background: url("img/questions.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 30%; }
+  .ui-block .jedi {
+    background: url("img/jeditrainning.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .ui-block .block-interaction {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em 0 1em; }
+    @media (min-width: 768px) {
+      .ui-block .block-interaction {
+        padding: 0.5em 0 2em; } }
+    @media (min-width: 1024px) {
+      .ui-block .block-interaction {
+        width: 60%; } }
+    .ui-block .block-interaction .interaction-logo {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 3em 0; }
+    .ui-block .block-interaction .instructions-question {
+      display: block;
+      width: 100%;
+      padding: 1em 0; }
+      .ui-block .block-interaction .instructions-question p {
+        text-align: center;
+        color: #fff; }
+    .ui-block .block-interaction #madlibs-title-question {
+      display: block;
+      width: 100%;
+      padding: 1em 0;
+      font-size: 1.3em;
+      font-weight: 900;
+      text-align: center;
+      color: #cc3742; }
+    .ui-block .block-interaction #question-text-block {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0.8em;
+      font-weight: 400;
+      line-height: 1.2em;
+      text-align: justify;
+      color: #fff; }
+      @media (min-width: 414px) {
+        .ui-block .block-interaction #question-text-block {
+          font-size: 0.9em;
+          line-height: 1.3em; } }
+      @media (min-width: 768px) {
+        .ui-block .block-interaction #question-text-block {
+          font-size: 1.2em;
+          line-height: 1.6em; } }
+      @media (min-width: 1024px) {
+        .ui-block .block-interaction #question-text-block {
+          font-size: 1em;
+          line-height: 1.4em; } }
+      .ui-block .block-interaction #question-text-block span {
+        color: #cc3742;
+        font-weight: 900; }
+    .ui-block .block-interaction #question-answers {
+      display: block;
+      width: 100%; }
+      .ui-block .block-interaction #question-answers .question-field {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%; }
+        .ui-block .block-interaction #question-answers .question-field .inputTitle {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: #cc3742;
+          padding: 1em 0 0.5em;
+          font-size: 1.4em;
+          font-weight: 900; }
+        .ui-block .block-interaction #question-answers .question-field input {
+          display: block;
+          width: 80%;
+          max-width: 350px;
+          padding: 0.2em 0;
+          margin-bottom: 0.5em;
+          color: #cc3742;
+          font-weight: 900;
+          font-size: 1.2em;
+          text-align: center;
+          border: none;
+          border-radius: 5px; }
+        .ui-block .block-interaction #question-answers .question-field .save-btn {
+          display: block;
+          width: 80%;
+          max-width: 350px;
+          background: #cc3742;
+          color: #fff;
+          text-align: center;
+          font-size: 1.3em;
+          font-weight: 900;
+          padding: 0.5em 0;
+          border-radius: 5px; }
+    .ui-block .block-interaction #answers-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%; }
+      @media (min-width: 1024px) {
+        .ui-block .block-interaction #answers-btn {
+          padding: 1em 0;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+      .ui-block .block-interaction #answers-btn .ui-btn {
+        display: block;
+        width: 70%;
+        max-width: 220px;
+        margin: 0.5em 0;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 0.5em 0;
+        border-radius: 10px;
+        color: #fff;
+        background: #cc3742; }
+      .ui-block .block-interaction #answers-btn #restart-btn {
+        color: #fff;
+        background: #cc3742; }
+      .ui-block .block-interaction #answers-btn #save-pdf {
+        color: #cc3742;
+        background: #fff; }

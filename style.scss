@@ -1,20 +1,352 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+$breakpointScreen: 768px;
+$black: #0E1A25;
+$white: #fff;
+$colorResalte: #cc3742;
 
 body {
-    background: pink;
+    background: #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: bold;
+.wrap {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.save-btn {
-    width: 200px;
+.home, .question-answer {
+    background: url("img/BGMOBILE.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    background: #c01a94;
-    color: #fff;
+    @media (min-width: $breakpointScreen) {
+        background: url("img/BGHOME.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.question-answer {
+    @media (min-width: $breakpointScreen) {
+        background: url("img/BGDESKTOP.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.start-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    max-width: 600px;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: $black;
+    border-radius: 10px;
+
+    @media (min-width: $breakpointScreen) {
+        background: $colorResalte;
+    }
+
+    .home-logo {
+        width: 90%;
+        margin: 0 auto;
+        padding: 7em 0;
+    }
+}
+
+#home-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    max-width: 250px;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 1.6em;
+    font-weight: 900;
+    padding: 0.5em 0;
 
     text-align: center;
-    padding: 0.5em;
+    color: $white;
+
+    background: $colorResalte;
+    border: 4px solid $white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.logo {
+    background: url("img/LOGOmadlibs.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ui-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1024px;   
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);    
+
+    background: $black;
+    border-radius: 15px;
+
+    @media (min-width: $breakpointScreen) {
+        overflow: hidden;
+    }
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        overflow: inherit;
+        left: calc(50% + 20px);
+        min-height: 600px;
+    }
+
+    .pic-side {
+        display: none;
+        width: 100%;
+
+        // background: url("img/questions.jpg");
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: 0 30%;
+        padding: 6em 0;
+
+        @media (min-width: $breakpointScreen) {
+            display: block;
+        }
+
+        @media (min-width: 1024px) {
+            width: 40%;
+            padding: 15em 0;
+            border-radius: 20px;
+            margin-left: -40px;
+        }
+    }
+
+    #question-pic {
+        background: url("img/questions.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 30%;
+    }
+
+    .jedi {
+        background: url("img/jeditrainning.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .block-interaction{
+        display: block;
+        width: 100%;
+
+        margin: 0 auto;
+
+        padding: 0.5em 0 1em;
+
+        @media (min-width: $breakpointScreen) {
+            padding: 0.5em 0 2em;
+        }
+        
+        @media (min-width: 1024px) {
+            width: 60%;
+        }
+    
+        .interaction-logo {
+            display: block;
+            width: 100%;
+
+            margin: 0 auto;
+            padding: 3em 0;
+        }
+
+        .instructions-question {
+            display: block;
+            width: 100%;
+
+            padding: 1em 0;
+
+            p {
+                text-align: center;
+                color: $white;
+            }
+        }
+
+        #madlibs-title-question {
+            display: block;
+            width: 100%;
+
+            padding: 1em 0;
+
+            font-size: 1.3em;
+            font-weight: 900;
+            text-align: center;
+            color: $colorResalte;
+        }
+
+        #question-text-block {
+            display: block;
+            width: 90%;
+
+            margin: 0 auto;
+
+            font-size: 0.8em;
+            font-weight: 400;
+            line-height: 1.2em;
+            text-align: justify;
+            color: $white;
+
+            @media (min-width: 414px) {
+                font-size: 0.9em;
+                line-height: 1.3em;
+            }
+
+            @media (min-width: $breakpointScreen) {
+                font-size: 1.2em;
+                line-height: 1.6em;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 1em;
+                line-height: 1.4em;
+            }
+
+            span {
+                color: $colorResalte;
+                font-weight: 900;
+            }
+        }
+
+        #question-answers {
+            display: block;
+            width: 100%;
+
+            .question-field {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                width: 100%;
+
+                .inputTitle {
+                    display: block;
+                    width: 100%;
+
+                    text-align: center;
+                    color: $colorResalte;
+                    padding: 1em 0 0.5em;
+
+                    font-size: 1.4em;
+                    font-weight: 900;
+                }
+
+                input {
+                    display: block;
+                    width: 80%;
+
+                    max-width: 350px;
+
+                    padding: 0.2em 0;
+                    margin-bottom: 0.5em;
+
+                    color: $colorResalte;
+                    font-weight: 900;
+                    font-size: 1.2em;
+                    text-align: center;
+
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                .save-btn {
+                    display: block;
+                    width: 80%;
+                    max-width: 350px;
+
+                    background: $colorResalte;
+                    color: $white;
+                    text-align: center;
+
+                    font-size: 1.3em;
+                    font-weight: 900;
+
+                    padding: 0.5em 0;
+
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        #answers-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 100%;            
+
+            @media (min-width: 1024px) {
+                padding: 1em 0;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .ui-btn {
+                display: block;
+                width: 70%;
+                max-width: 220px;
+                
+                margin: 0.5em 0;
+
+                text-align: center;
+                font-size: 1.2em;
+                padding: 0.5em 0;
+
+                border-radius: 10px;
+
+                color: $white;
+                background: $colorResalte;                
+            }
+
+            #restart-btn {
+                color: $white;
+                background: $colorResalte;
+            }
+
+            #save-pdf {
+                color: $colorResalte;
+                background: $white;
+            }
+        }
+    }
+
+    
+
 }
