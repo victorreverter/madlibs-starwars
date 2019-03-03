@@ -1,7 +1,7 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 body {
-  background: #fff;
+  background: #0E1A25;
   font-family: 'Ubuntu', sans-serif; }
 
 .wrap {
@@ -140,8 +140,23 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 30%; }
+  .ui-block .chewy {
+    background: url("img/chewy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .ui-block .jedi {
     background: url("img/jeditrainning.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .ui-block .the-force {
+    background: url("img/theforce.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .ui-block .rebel-princess {
+    background: url("img/therebelprincess.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -168,7 +183,8 @@ body {
       .ui-block .block-interaction .instructions-question p {
         text-align: center;
         color: #fff; }
-    .ui-block .block-interaction #madlibs-title-question {
+    .ui-block .block-interaction #madlibs-title-question,
+    .ui-block .block-interaction #madlibs-title-answer {
       display: block;
       width: 100%;
       padding: 1em 0;
@@ -176,7 +192,8 @@ body {
       font-weight: 900;
       text-align: center;
       color: #cc3742; }
-    .ui-block .block-interaction #question-text-block {
+    .ui-block .block-interaction #question-text-block,
+    .ui-block .block-interaction #answer-text-block {
       display: block;
       width: 90%;
       margin: 0 auto;
@@ -186,18 +203,22 @@ body {
       text-align: justify;
       color: #fff; }
       @media (min-width: 414px) {
-        .ui-block .block-interaction #question-text-block {
+        .ui-block .block-interaction #question-text-block,
+        .ui-block .block-interaction #answer-text-block {
           font-size: 0.9em;
           line-height: 1.3em; } }
       @media (min-width: 768px) {
-        .ui-block .block-interaction #question-text-block {
+        .ui-block .block-interaction #question-text-block,
+        .ui-block .block-interaction #answer-text-block {
           font-size: 1.2em;
           line-height: 1.6em; } }
       @media (min-width: 1024px) {
-        .ui-block .block-interaction #question-text-block {
+        .ui-block .block-interaction #question-text-block,
+        .ui-block .block-interaction #answer-text-block {
           font-size: 1em;
           line-height: 1.4em; } }
-      .ui-block .block-interaction #question-text-block span {
+      .ui-block .block-interaction #question-text-block span,
+      .ui-block .block-interaction #answer-text-block span {
         color: #cc3742;
         font-weight: 900; }
     .ui-block .block-interaction #question-answers {
@@ -277,7 +298,8 @@ body {
         padding: 0.5em 0;
         border-radius: 10px;
         color: #fff;
-        background: #cc3742; }
+        background: #cc3742;
+        cursor: pointer; }
       .ui-block .block-interaction #answers-btn #restart-btn {
         color: #fff;
         background: #cc3742; }

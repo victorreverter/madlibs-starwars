@@ -7,7 +7,7 @@ $white: #fff;
 $colorResalte: #cc3742;
 
 body {
-    background: #fff;
+    background: $black;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -157,8 +157,29 @@ body {
         background-position: 0 30%;
     }
 
+    .chewy {
+        background: url("img/chewy.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .jedi {
         background: url("img/jeditrainning.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .the-force {
+        background: url("img/theforce.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .rebel-princess {
+        background: url("img/therebelprincess.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -200,7 +221,8 @@ body {
             }
         }
 
-        #madlibs-title-question {
+        #madlibs-title-question,
+        #madlibs-title-answer {
             display: block;
             width: 100%;
 
@@ -212,7 +234,8 @@ body {
             color: $colorResalte;
         }
 
-        #question-text-block {
+        #question-text-block,
+        #answer-text-block {
             display: block;
             width: 90%;
 
@@ -332,7 +355,9 @@ body {
                 border-radius: 10px;
 
                 color: $white;
-                background: $colorResalte;                
+                background: $colorResalte; 
+                
+                cursor: pointer;
             }
 
             #restart-btn {
